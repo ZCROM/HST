@@ -43,7 +43,7 @@ class Layer(object):
             layer = self.__class__.__name__.lower()
             name = layer + '_' + str(get_layer_uid(layer))
         self.name = name
-        self.vars ={}
+        self.vars = {}
         logging = kwargs.get('logging', False)
         self.logging = logging
         self.sparse_inputs = False
